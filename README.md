@@ -36,7 +36,7 @@
 
 克隆仓库（repo），并在 [Python>=3.8.0](https://www.python.org) 的环境中安装 [requirements](requirements.txt) 所需的依赖。
 ```sh
-git clone https://github.com/
+git clone https://github.com/lyshengtr/AutoTask-VMKC.git
 cd AutoTask-VMKC
 pip install -r requirements.txt
 ```
