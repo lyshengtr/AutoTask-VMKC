@@ -124,7 +124,7 @@ def record_generate(auto_task_name, repeat_times):
         
         file.write("\ttime.sleep(1)\n")
     
-    file.write("print(\"\\r[%%d] Finished !  \t\t\t\t\", end = '')\n")
+    file.write("\tprint(\"\\r[%%d] Finished !  \t\t\t\t\" %s count, end = '')\n" % '%')
     file.close()
     
     return True
