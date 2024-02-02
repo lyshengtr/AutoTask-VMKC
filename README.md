@@ -57,7 +57,7 @@ pip install -r requirements.txt
 
   该脚本执行后，在CMD窗口中选择对应的操作，退出时会根据记录的操作，生成新的自动执行脚本文件。
 
-  <img src="demo/usage.png" style="zoom:100%;" />
+  <img src="demo/usage.png" style="zoom:65%;" />
 
   注：所有的鼠标操作，目前默认绑定为左键，使用时在输入指令后，将鼠标移动至需要的位置（仅移动位置，不做其他操作），再键入回车，即会执行并记录。而所有的键盘操作，目前仅做记录，不在记录时执行。
 
