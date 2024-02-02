@@ -10,7 +10,6 @@
   <p align="center">
     实现模拟键鼠操作的自动化流程脚本
     <br />
-    <br />
     <a href="https://github.com/lyshengtr/AutoTask-VMKC/issues">反馈 Bug</a>
     ·
     <a href="https://github.com/lyshengtr/AutoTask-VMKC/issues">请求新功能</a>
