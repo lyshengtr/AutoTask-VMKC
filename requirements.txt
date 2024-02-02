@@ -1,0 +1,6 @@
+# AutoTask-VMKC Requirements
+# Usage : pip install -r requirements.txt
+
+# Base ------------------------------------------------------
+numpy>=1.26.1
+Pillow>=8.3.1
