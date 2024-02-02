@@ -30,11 +30,11 @@
 
 <p align="right">(<a href="#top">回到顶部</a>)</p>
 
-<!-- 开始 -->
+<!-- 安装 -->
 
-## 开始
+## 安装
 
-克隆仓库（repo），并在 [Python>=3.8.0](https://www.python.org) 的环境中安装 [requirements](requirements.txt) 所需的依赖。
+克隆仓库（repo），并在 [Python>=3.8.0](https://www.python.org) 的环境中安装 [requirements](requirements.txt) 所需的依赖。目前仅支持Windows平台。
 ```sh
 git clone https://github.com/lyshengtr/AutoTask-VMKC.git
 cd AutoTask-VMKC
