@@ -34,7 +34,7 @@
 
 ## 开始
 
-克隆仓库（repo），并在 [Python>=3.8.0](https://www.python.org) 的环境中安装 [requirements.txt](requirements.txt) 所需的依赖。
+克隆仓库（repo），并在 [Python>=3.8.0](https://www.python.org) 的环境中安装 [requirements](requirements.txt) 所需的依赖。
 ```sh
 git clone https://github.com/
 cd AutoTask-VMKC
@@ -91,7 +91,7 @@ pip install -r requirements.txt
 
 ## 许可证
 
-根据 MIT 许可证分发。打开 [LICENSE](LICENSE.txt) 查看更多内容。
+根据 MIT 许可证分发。打开 [LICENSE](LICENSE) 查看更多内容。
 
 <p align="right">(<a href="#top">回到顶部</a>)</p>
 
@@ -116,4 +116,4 @@ lysheng - lyshengtr@outlook.com
 [issues-shield]: https://img.shields.io/github/issues/lyshengtr/AutoTask-VMKC.svg?style=for-the-badge
 [issues-url]: https://github.com/lyshengtr/AutoTask-VMKC/issues
 [license-shield]: https://img.shields.io/github/license/lyshengtr/AutoTask-VMKC.svg?style=for-the-badge
-[license-url]: https://github.com/lyshengtr/AutoTask-VMKC/LICENSE.txt
+[license-url]: https://github.com/lyshengtr/AutoTask-VMKC/LICENSE
