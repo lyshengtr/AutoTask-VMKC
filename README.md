@@ -1,7 +1,6 @@
 <div id="top"></div>
 
 <!-- 项目 SHIELDS -->
-<div align="center">
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -9,6 +8,7 @@
 ![MIT License][license-shield]
 
 <!-- 项目 LOGO -->
+<div align="center">
   <h3 align="center">AutoTask-VMKC</h3>
   <p align="center">
     实现模拟键鼠操作的自动化流程脚本
