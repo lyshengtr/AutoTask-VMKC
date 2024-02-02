@@ -45,14 +45,14 @@ def record_generate(auto_task_name, repeat_times):
             point = vmkc.CTypePoint()
             ctypes.windll.user32.GetCursorPos(ctypes.byref(point))
             vmkc.mouse.click(int(point.x), int(point.y), vmkc.MOUSEKEY_LEFT)
-            file.write("\tprint(\"\\r[%%d] Click at (%s, %s) !  \t\t\t\t\" %% count, end = '')\n" % (int(point.x), int(point.y)))
+            file.write("\tprint(\"\\r[%%d] Click at (%s, %s) !  \\t\\t\\t\\t\" %% count, end = '')\n" % (int(point.x), int(point.y)))
             file.write("\tvmkc.mouse.click(%s, %s, %s)\n" % (int(point.x), int(point.y), vmkc.MOUSEKEY_LEFT))
         
         elif order.upper() == 'D':
             point = vmkc.CTypePoint()
             ctypes.windll.user32.GetCursorPos(ctypes.byref(point))
             vmkc.mouse.double_click(int(point.x), int(point.y), vmkc.MOUSEKEY_LEFT)
-            file.write("\tprint(\"\\r[%%d] Double click at (%s, %s) !  \t\t\t\t\" %% count, end = '')\n" % (int(point.x), int(point.y)))
+            file.write("\tprint(\"\\r[%%d] Double click at (%s, %s) !  \\t\\t\\t\\t\" %% count, end = '')\n" % (int(point.x), int(point.y)))
             file.write("\tvmkc.mouse.double_click(%s, %s, %s)\n" % (int(point.x), int(point.y), vmkc.MOUSEKEY_LEFT))
         
         elif order.upper() == 'M':
@@ -65,32 +65,32 @@ def record_generate(auto_task_name, repeat_times):
             point2 = vmkc.CTypePoint()
             ctypes.windll.user32.GetCursorPos(ctypes.byref(point2))
             vmkc.mouse.move(int(point1.x), int(point1.y), int(point2.x), int(point2.y), vmkc.MOUSEKEY_LEFT)
-            file.write("\tprint(\"\\r[%%d] Move from (%s, %s) to (%s, %s) !  \t\t\t\t\" %% count, end = '')\n" % (int(point1.x), int(point1.y), int(point2.x), int(point2.y)))
+            file.write("\tprint(\"\\r[%%d] Move from (%s, %s) to (%s, %s) !  \\t\\t\\t\\t\" %% count, end = '')\n" % (int(point1.x), int(point1.y), int(point2.x), int(point2.y)))
             file.write("\tvmkc.mouse.move(%s, %s, %s, %s, %s)\n" % (int(point1.x), int(point1.y), int(point2.x), int(point2.y), vmkc.MOUSEKEY_LEFT))
         
         elif order.upper() == 'B':
             # vmkc.keyboard.press(vmkc.KEY_CODE["backspace"])
-            file.write("\tprint(\"\\r[%%d] Press 'BACKSPACE' !  \t\t\t\t\" %s count, end = '')\n" % '%')
+            file.write("\tprint(\"\\r[%%d] Press 'BACKSPACE' !  \\t\\t\\t\\t\" %s count, end = '')\n" % '%')
             file.write("\tvmkc.keyboard.press(%s)\n" % vmkc.KEY_CODE["backspace"])
         
         elif order.upper() == 'E':
             # vmkc.keyboard.press(vmkc.KEY_CODE["enter"])
-            file.write("\tprint(\"\\r[%%d] Press 'ENTER' !  \t\t\t\t\" %s count, end = '')\n" % '%')
+            file.write("\tprint(\"\\r[%%d] Press 'ENTER' !  \\t\\t\\t\\t\" %s count, end = '')\n" % '%')
             file.write("\tvmkc.keyboard.press(%s)\n" % vmkc.KEY_CODE["enter"])
         
         elif order.upper() == 'N':
             # vmkc.keyboard.press(vmkc.KEY_CODE["down"])
-            file.write("\tprint(\"\\r[%%d] Press 'ARROWDOWN' !  \t\t\t\t\" %s count, end = '')\n" % '%')
+            file.write("\tprint(\"\\r[%%d] Press 'ARROWDOWN' !  \\t\\t\\t\\t\" %s count, end = '')\n" % '%')
             file.write("\tvmkc.keyboard.press(%s)\n" % vmkc.KEY_CODE["down"])
         
         elif order.upper() == 'L':
             # vmkc.keyboard.press(vmkc.KEY_CODE["up"])
-            file.write("\tprint(\"\\r[%%d] Press 'ARROWUP' !  \t\t\t\t\" %s count, end = '')\n" % '%')
+            file.write("\tprint(\"\\r[%%d] Press 'ARROWUP' !  \\t\\t\\t\\t\" %s count, end = '')\n" % '%')
             file.write("\tvmkc.keyboard.press(%s)\n" % vmkc.KEY_CODE["up"])
         
         elif order.upper() == 'S':
             # vmkc.keyboard.press(vmkc.KEY_CODE["space"])
-            file.write("\tprint(\"\\r[%%d] Press 'SPACE' !  \t\t\t\t\" %s count, end = '')\n" % '%')
+            file.write("\tprint(\"\\r[%%d] Press 'SPACE' !  \\t\\t\\t\\t\" %s count, end = '')\n" % '%')
             file.write("\tvmkc.keyboard.press(%s)\n" % vmkc.KEY_CODE["space"])
         
         elif order.upper() == 'J':
@@ -110,7 +110,7 @@ def record_generate(auto_task_name, repeat_times):
             
             file.write("\tvmkc.screen_grab((%s, %s, %s, %s), \"%s\")\n" % (int(point1.x), int(point1.y), int(point2.x), int(point2.y), judge_tmp_path ))
             file.write("\tprocessed = False\n")
-            file.write("\tprint(\"\\r[%%d] Waiting for judgement ...  \t\t\t\t\" %s count, end = '')\n" % '%')
+            file.write("\tprint(\"\\r[%%d] Waiting for judgement ...  \\t\\t\\t\\t\" %s count, end = '')\n" % '%')
             file.write("\twhile not processed:\n")
             file.write("\t\tprocessed = vmkc.brute_force_judge(\"%s\", \"%s\")\n" % (judge_std_path, judge_tmp_path ))
             file.write("\t\ttime.sleep(1)\n")
@@ -124,7 +124,7 @@ def record_generate(auto_task_name, repeat_times):
         
         file.write("\ttime.sleep(1)\n")
     
-    file.write("\tprint(\"\\r[%%d] Finished !  \t\t\t\t\" %s count, end = '')\n" % '%')
+    file.write("\tprint(\"\\r[%%d] Finished !  \\t\\t\\t\\t\" %s count, end = '')\n" % '%')
     file.close()
     
     return True

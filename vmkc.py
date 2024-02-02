@@ -3,8 +3,8 @@
     File        : vmkc.py
     Description : The module for the vitural mouse-keyborad control.
     Author      : lysheng (@TJ-CVRSG)
-    Date        : 2024-02-01
-    Version     : 1.0
+    Date        : 2024-02-02
+    Version     : 1.1
 '''
 
 
@@ -100,6 +100,9 @@ class mouse:
             mouse_event = [MOUSEEVENT_RIGHTDOWN, MOUSEEVENT_RIGHTUP]
         ctypes.windll.user32.SetCursorPos(x1, y1)
         ctypes.windll.user32.mouse_event(mouse_event[0])
+        time.sleep(1)
+        # Wait for system
+        ctypes.windll.user32.SetCursorPos(x1 + 5, y1)
         time.sleep(1)
         ctypes.windll.user32.SetCursorPos(x2, y2)
         time.sleep(1)
