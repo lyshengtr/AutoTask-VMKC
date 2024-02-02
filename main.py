@@ -10,6 +10,7 @@
 
 import argparse
 import ctypes
+import os
 import vmkc
 
 
@@ -135,6 +136,9 @@ if __name__ == "__main__":
     parser.add_argument("--task", type = str, default = "auto-task-demo", help = "The name of the auto task.")
     parser.add_argument("--times", type = int, default = -1, help = "The times you want the task to auto work. (Default is infinity)")
     args = parser.parse_args()
+    
+    if not os.path.exists("./tmp"):
+        os.mkdir("./tmp")
 
     print("====================AUTOTASK-VMKC===================")
     print()
