@@ -2,9 +2,6 @@
 
 <!-- 项目 SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 ![MIT License][license-shield]
 
 <!-- 项目 LOGO -->
