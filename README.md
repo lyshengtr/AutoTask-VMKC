@@ -73,20 +73,6 @@ pip install -r requirements.txt
   另外，可以运行 cursor.py 工具来实时获取鼠标位置，在生成的脚本文件中，自定义修改一些指令（例如，当大部分流程相同，仅操作位置不同的时候，直接修改比重新记录一遍要更加便捷）。
 
 
-<p align="right">(<a href="#top">返回顶部</a>)</p>
-
-<!-- 贡献 -->
-
-## 贡献
-
-如果你有好的建议，请复刻（fork）本仓库并且创建一个拉取请求（pull request）。你也可以简单地创建一个议题（issue），并且添加标签「enhancement」。如果你觉得项目有用，不要忘记给项目点一个 star！再次感谢！
-
-1. 复刻（Fork）本项目
-2. 创建你的 Feature 分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交你的变更 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到该分支 (`git push origin feature/AmazingFeature`)
-5. 创建一个拉取请求（Pull Request）
-
 <p align="right">(<a href="#top">回到顶部</a>)</p>
 
 <!-- 许可证 -->
